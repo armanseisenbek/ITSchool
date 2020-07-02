@@ -1,2 +1,2 @@
-# programmingSchool
-сайт для школы программирования - programmingSchool
+# ITSchool
+сайт для школы программирования - ITSchool
