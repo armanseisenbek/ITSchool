@@ -10,317 +10,281 @@
 
 	<!-- gallery styles -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
-    <link rel="stylesheet" href="compact-gallery.css">
-
-	<!-- Fontawesome -->
-	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/compact-gallery.css">
 
 	<!-- external CSS -->
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./styles/style.css">
 
-	<title>Школа Программирования - programmingSchool</title>
+	<title>Школа Программирования ITSchool</title>
 </head>
 <body>
 	
-	<!-- page -->
-	<div class="first">
+	<!-- navigation -->
+	<div class="navigation">
 
 		<!-- navigation -->
     	<div class="container">
-			<div class="navbar navbar-expand-lg">
+			<div class="navbar navbar-expand-lg navbar-dark">
 
         		<!-- brand -->
         		<a class="navbar-brand" href="/" style="color: white;">
-        			ProgrammingSchool
+        			ITSchool
         		</a>
 
 	        	<!-- burger for mobile devices -->
-	        	<button
-		            class="navbar-toggler"
-		            type="button"
-		            data-toggle="collapse"
-		            data-target="#navbarResponsive"
-		            aria-controls="navbarResponsive"
-		            aria-expanded="false"
-		            aria-label="Toggle navigation"
-	        	>
+	        	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+		        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 		            <!-- hamburger icon -->
 		            <span class="navbar-toggler-icon"></span>
 		        </button>
 
 			    <div class="collapse navbar-collapse" id="navbarResponsive">
 			        <ul class="navbar-nav ml-auto">
-
 		            	<!-- navigation links -->
-		            	<li class="nav-item">
-		                	<a class="nav-link" href="/index.php"> Home </a>
-		                </li>
-
-		                <li>
-		                    <a class="nav-link" href="../pages/about.php"> About us </a>
-		                </li>
-
-		              	<li>
-		                    <a class="nav-link" href="../pages/about.php"> About us </a>
-		                </li>
-
-		                <li>
-		                    <a class="nav-link" href="../pages/about.php"> About us </a>
-		                </li>
-
+		                <li><a class="nav-link" href="#info"> Что мы предлагаем? </a></li>
+		              	<li><a class="nav-link" href="#courses"> Наши курсы </a></li>
+						<li><a class="nav-link" href="#info2"> Почему выбирают нас? </a></li>
 		            </ul>
 		        </div>
 
     		</div>
 		</div>
 
-		<!-- page banner -->
-		<div class="container">
-			<!-- brand -->
-			<h1 class="logo">ProgrammingSchool</h1>
+		<!-- title -->
+		<div class="container mainTitle">
+			<h2 style="margin-bottom: 50px">Школа программирования - ITSchool</h2>
+			<h1 class="mainTitleText">Научись программировать с нами!</h1>
 			<!-- text below brand -->
-			<p class="headerText">
-				programmingSchool - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in repre
-			</p>
-
+			<p> Освой программирование со скидкой 25%, всего за 12 уроков с помощью опытных IT специалистов </p>
 			<!-- apply button -->
-			<a class="btn btn-success tempButton" href="/">Хочу учиться!</a>
-						
+			<a href="#formContainer" class="btn btn-outline-light btn-lg titleButton">
+				Хочу учиться!	
+			</a>
 		</div>
-
 
 	</div>
 
 	<!-- container section -->
 	<div class="container-fluid custom-container">
 		
-		<div class="info">
-
+		<!-- information section -->
+		<div class="info" id="info">
 			<!-- section header -->
-			<div class="header">
-				<h1>ЧТО МЫ ПРЕДЛАГАЕМ</h1>
-			</div>
-
+			<h1 class="header">ЧТО МЫ ПРЕДЛАГАЕМ</h1>
+			<hr class="headerLine">
 			<!-- section row -->
 			<div class="row">
-				<div class="col-lg-4" style="text-align: justify;">
-					<img class="infoImage" src="infoImage.jpg">
-					<h3 style="text-align: center;">Учись с нами!</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
+				<div class="col-lg-4">
+					<img class="infoImage" src="flatImages/flatImage1.jpg">
+					<h3 class="infoHeading">Востребованные знания</h3>
+					<p class="infoText">По завершению курса, вы решите 50+ задач программистов!</p>
 				</div>
-				<div class="col-lg-4" style="text-align: justify;">
-					<img class="infoImage" src="infoImage.jpg">
-					<h3 style="text-align: center;">Учись с нами!</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
+				<div class="col-lg-4">
+					<img class="infoImage" src="flatImages/flatImage2.jpg">
+					<h3 class="infoHeading">Работа в команде</h3>
+					<p class="infoText">Опыт работы в команде, научитесь работать сообща.</p>
 				</div>
-				<div class="col-lg-4" style="text-align: justify;">
-					<img class="infoImage" src="infoImage.jpg">
-					<h3 style="text-align: center;">Учись с нами!</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
+				<div class="col-lg-4">
+					<img class="infoImage" src="flatImages/flatImage3.jpg">
+					<h3 class="infoHeading">Собственный проект</h3>
+					<p class="infoText">За вашими плечами будут уже готовые проекты, которые упростят вам жизнь!</p>
 				</div>
 			</div>
 		</div>
+		<!-- / information section -->
 
-		<div class="courses">
+		<!-- courses sections -->
+		<div class="courses" id="courses">
 
 			<!-- section header -->
-			<div class="header">
-				<h1>НАШИ КУРСЫ</h1>
-			</div>
-
+			<h1 class="header">НАШИ КУРСЫ</h1>
+			<hr class="headerLine">
 			<!-- section row -->
 			<div class="row">
 				<div class="col-lg-3 col-md-4 mb-4">
-	                <a href="/">
 	                    <!-- background image of product card -->
-	                    <div class="card" style="background-image: url( 'language.jpg' )">
+	                    <div class="card">
 	                        <div class="card-img-overlay">
 	                            <!-- title of product card -->
-	                            <h4 class="card-title">Java</h4>
+	                            <h4 class="card-title">C++</h4>
 	                            <!-- text of product card -->
 	                            <div class="card-text">
 	                                <p>
-	                                	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	                                	Длительность: 12 недель <br>
+										Уровень: начальный <br>
+										Старт: 1 июля <br>
+										Пн-Ср-Пт 19:00-21:00 <br>
+										Осталось: 0 мест <br>
 	                                </p>
 	                                <!-- button -->
 	                                <div class="text-center">
-	                                    <button type="button" class="btn btn-success btn-md">Выбрать</button>
+	                					<a href="#formContainer">
+	                                    	<button type="button" class="btn btn-warning btn-lg cardButton">Выбрать</button>
+	                					</a>
 	                                </div>
 	                            </div>
 	                        </div>
 	                    </div>
-	                </a>
 	            </div>
 
 	            <div class="col-lg-3 col-md-4 mb-4">
-	                <a href="/">
 	                    <!-- background image of product card -->
-	                    <div class="card" style="background-image: url( 'language.jpg' )">
+	                    <div class="card">
 	                        <div class="card-img-overlay">
 	                            <!-- title of product card -->
-	                            <h4 class="card-title">Java</h4>
+	                            <h4 class="card-title">Web</h4>
 	                            <!-- text of product card -->
 	                            <div class="card-text">
 	                                <p>
-	                                	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	                                	Длительность: 12 недель <br>
+										Уровень: начальный <br>
+										Старт: 1 июля <br>
+										Пн-Ср-Пт 19:00-21:00 <br>
+										Осталось: 0 мест <br>
 	                                </p>
 	                                <!-- button -->
 	                                <div class="text-center">
-	                                    <button type="button" class="btn btn-success btn-md">Выбрать</button>
+	                                   <a href="#formContainer">
+	                                    	<button type="button" class="btn btn-warning btn-lg cardButton">Выбрать</button>
+	                					</a>
 	                                </div>
 	                            </div>
 	                        </div>
 	                    </div>
-	                </a>
 	            </div>
 
 	            <div class="col-lg-3 col-md-4 mb-4">
-	                <a href="/">
 	                    <!-- background image of product card -->
-	                    <div class="card" style="background-image: url( 'language.jpg' )">
+	                    <div class="card">
 	                        <div class="card-img-overlay">
 	                            <!-- title of product card -->
-	                            <h4 class="card-title">Java</h4>
+	                            <h4 class="card-title">Python</h4>
 	                            <!-- text of product card -->
 	                            <div class="card-text">
-	                                <p>
-	                                	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	                               <p>
+	                                	Длительность: 12 недель <br>
+										Уровень: начальный <br>
+										Старт: 1 июля <br>
+										Пн-Ср-Пт 19:00-21:00 <br>
+										Осталось: 0 мест <br>
 	                                </p>
 	                                <!-- button -->
 	                                <div class="text-center">
-	                                    <button type="button" class="btn btn-success btn-md">Выбрать</button>
+	                                    <a href="#formContainer">
+	                                    	<button type="button" class="btn btn-warning btn-lg cardButton">Выбрать</button>
+	                					</a>
 	                                </div>
 	                            </div>
 	                        </div>
 	                    </div>
-	                </a>
 	            </div>
 
 	            <div class="col-lg-3 col-md-4 mb-4 o">
-	                <a href="/">
 	                    <!-- background image of product card -->
-	                    <div class="card" style="background-image: url( 'language.jpg' )">
+	                    <div class="card">
 	                        <div class="card-img-overlay">
 	                            <!-- title of product card -->
 	                            <h4 class="card-title">Java</h4>
 	                            <!-- text of product card -->
 	                            <div class="card-text">
-	                                <p>
-	                                	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	                               <p>
+	                                	Длительность: 12 недель <br>
+										Уровень: начальный <br>
+										Старт: 1 июля <br>
+										Пн-Ср-Пт 19:00-21:00 <br>
+										60 000 тг/мес <br>
 	                                </p>
 	                                <!-- button -->
 	                                <div class="text-center">
-	                                    <button type="button" class="btn btn-success btn-md">Выбрать</button>
+	                                    <a href="#formContainer">
+	                                    	<button type="button" class="btn btn-warning btn-lg cardButton">Выбрать</button>
+	                					</a>
 	                                </div>
 	                            </div>
 	                        </div>
 	                    </div>
-	                </a>
 	            </div>
+
 			</div>
+
 		</div>
 
-		<div class="information">
+		<div id="info2">
 			
-			<div class="header">
-				<h1>ПОЧЕМУ ВЫБИРАЮТ НАС?</h1>
+			<!-- section header -->
+			<h1 class="header">ПОЧЕМУ ВЫБИРАЮТ НАС?</h1>
+			<hr class="headerLine">
+			<!-- section row -->
+			<div class="row">
+				<div class="col-lg-6">
+					<img class="infoImage" src="flatImages/flatImage9.jpg">
+				</div>
+				<div class="col-lg-6 sideText">
+					<h2>Тщательно проработанные курсы</h2>
+					<div class="textBox">
+						Наша команда постоянно совершенствует контент курсов по программированию, их задачи и сам подход к обучению.
+					</div>
+				</div>
+			</div>
+			<!-- second section row -->
+			<div class="row">	
+				<div class="col-lg-6 order-lg-7 ">
+					<img class="infoImage" src="flatImages/flatImage8.jpg">
+				</div>
+				<div class="col-lg-6 order-lg-5 sideText">
+					<h2>Гарантия качества</h2>
+					<div class="textBox">
+						Наша команда постоянно совершенствует контент курсов по программированию, их задачи и сам подход к обучению.
+					</div>
+				</div>
+			</div>
+			<!-- third section row -->
+			<div class="row">	
+				<div class="col-lg-6">
+					<img class="infoImage" src="flatImages/flatImage7.jpg">
+				</div>
+				<div class="col-lg-6 sideText">
+					<h2>Мы те, кто умеет обучать и мотивировать	</h2>
+					<div class="textBox">
+						Наша команда постоянно совершенствует контент курсов по программированию, их задачи и сам подход к обучению.
+					</div>
+				</div>
 			</div>
 
-			<div class="row">
-				<div class="col-lg-6" style="text-align: center;">
-					<img class="infoImage" src="infoImage.jpg" style="height: 400px">
-				</div>
-				<div class="col-lg-6">
-					<h2>ТЕКСТ ТЕКСТ ТЕКСТ</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
-			</div>
-			<div class="row">	
-				<div class="col-lg-6 order-lg-7" style="text-align: center;">
-					<img class="infoImage" src="infoImage.jpg" style="height: 400px">
-				</div>
-				<div class="col-lg-6 order-lg-5">
-					<h2>ТЕКСТ ТЕКСТ ТЕКСТ</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
-			</div>		
-			<div class="row">	
-				<div class="col-lg-6" style="text-align: center;">
-					<img class="infoImage" src="infoImage.jpg" style="height: 400px">
-				</div>
-				<div class="col-lg-6">
-					<h2>ТЕКСТ ТЕКСТ ТЕКСТ</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
-			</div>
 		</div>
 
 		<div class="reviews">
 
-			<div class="header">
-				<h1>ОТЗЫВЫ НАШИХ СТУДЕНТОВ</h1>
-			</div>
+			<!-- section header -->
+			<h1 class="header">ОТЗЫВЫ НАШИХ СТУДЕНТОВ</h1>
+			<hr class="headerLine">
 
 			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   				<div class="carousel-inner">
-				    <div class="carousel-item active">
-				      	<p style="background-color: gray;">
-				      		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				      		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				      		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				      		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				      		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				      		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				    <div class="carousel-item active userReview w-100">
+				    	<h3>Алексей, курс WEB</h3>
+				      	<p>
+							Смысл жизни, следовательно, творит данный закон внешнего мира. Надстройка нетривиальна. Надстройка нетривиальна. Сомнение рефлектирует естественный закон исключённого третьего.. Смысл жизни, следовательно, творит данный закон внешнего мира. Надстройка нетривиальна. Согласно мнению известных философов, дедуктивный метод ес
+							Наряду с этим ощущение мира решительно контролирует непредвиденный гравитационный парадокс. Смысл жизни, следовательно, творит данный закон внешнего мира. Сомнение рефлектирует естественный закон исключённого третьего.. Отсюда естественно следует, что автоматизация дискредитирует предмет деятельности.
 				      	</p>
 				    </div>
-				    <div class="carousel-item ">
+				    <div class="carousel-item userReview">
+				    	<h3>Шынгыс, курс С++</h3>
 				      	<p>
-				      		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				      		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				      		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				      		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				      		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				      		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				      		Смысл жизни, следовательно, творит данный закон внешнего мира. Надстройка нетривиальна. Надстройка нетривиальна. Сомнение рефлектирует естественный закон исключённого третьего.. Смысл жизни, следовательно, творит данный закон внешнего мира. Надстройка нетривиальна. Согласно мнению известных философов, дедуктивный метод ес
+							Наряду с этим ощущение мира решительно контролирует непредвиденный гравитационный парадокс. Смысл жизни, следовательно, творит данный закон внешнего мира. Сомнение рефлектирует естественный закон исключённого третьего.. Отсюда естественно следует, что автоматизация дискредитирует предмет деятельности.
 				      	</p>
 				    </div>
-				    <div class="carousel-item">
+				    <div class="carousel-item userReview">
+				    	<h3>Санжар, курс Python</h3>
 				      	<p>
-				      		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				      		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				      		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				      		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				      		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				      		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				      		Смысл жизни, следовательно, творит данный закон внешнего мира. Надстройка нетривиальна. Надстройка нетривиальна. Сомнение рефлектирует естественный закон исключённого третьего.. Смысл жизни, следовательно, творит данный закон внешнего мира. Надстройка нетривиальна. Согласно мнению известных философов, дедуктивный метод ес
+							Наряду с этим ощущение мира решительно контролирует непредвиденный гравитационный парадокс. Смысл жизни, следовательно, творит данный закон внешнего мира. Сомнение рефлектирует естественный закон исключённого третьего.. Отсюда естественно следует, что автоматизация дискредитирует предмет деятельности.
 				      	</p>
 				    </div>
 				</div>
+
+				<!-- controls -->
 				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				    <span class="sr-only">Previous</span>
@@ -332,106 +296,146 @@
 			</div>
 		</div>
 		
+		<!-- Gallery -->
 		<div class="gallery">
-					<section class="gallery-block compact-gallery">
-		        		<div class="container">
-		            		<div class="heading">
-		                		<h2>Compact Gallery</h2>
-		            		</div>
-		            		<div class="row no-gutters">
-		                		<div class="col-md-6 col-lg-4 item zoom-on-hover">
-		                    		<a class="lightbox" href="img/image1.jpg">
-			                        	<img class="img-fluid image" src="img/image1.jpg">
-			                        	<span class="description">
-			                            	<span class="description-heading">Lorem Ipsum</span>
-			                            	<span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-			                        	</span>
-		                   	 		</a>
-		                		</div>
-		                		<div class="col-md-6 col-lg-4 item zoom-on-hover">
-		                    		<a class="lightbox" href="img/image2.jpg">
-				                        <img class="img-fluid image" src="img/image2.jpg">
-				                        <span class="description">
-				                            <span class="description-heading">Lorem Ipsum</span>
-				                            <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-				                        </span>
-				                    </a>
-		                		</div>
-		                		<div class="col-md-6 col-lg-4 item zoom-on-hover">
-				                    <a class="lightbox" href="img/image3.jpg">
-				                        <img class="img-fluid image" src="img/image3.jpg">
-				                        <span class="description">
-				                            <span class="description-heading">Lorem Ipsum</span>
-				                            <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-				                        </span>
-				                    </a>
-		                		</div>
-		                		<div class="col-md-6 col-lg-4 item zoom-on-hover">
-				                    <a class="lightbox" href="img/image4.jpg">
-				                        <img class="img-fluid image" src="img/image4.jpg">
-				                        <span class="description">
-				                            <span class="description-heading">Lorem Ipsum</span>
-				                            <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-				                       	</span>
-				                    </a>
-		                    	</div>
-		                		<div class="col-md-6 col-lg-4 item zoom-on-hover">
-				                    <a class="lightbox" href="img/image5.jpg">
-				                        <img class="img-fluid image" src="img/image5.jpg">
-				                        <span class="description">
-				                            <span class="description-heading">Lorem Ipsum</span>
-				                            <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-				                        </span>
-				                    </a>
-		                		</div>
-		                		<div class="col-md-6 col-lg-4 item zoom-on-hover">
-				                    <a class="lightbox" href="img/image6.jpg">
-				                        <img class="img-fluid image" src="img/image6.jpg">
-				                        <span class="description">
-				                            <span class="description-heading">Lorem Ipsum</span>
-				                            <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-				                        </span>
-				                    </a>
-				                </div>
-				                <div class="col-md-6 col-lg-4 item zoom-on-hover">
-				                    <a class="lightbox" href="img/image7.jpg">
-				                        <img class="img-fluid image" src="img/image7.jpg">
-				                        <span class="description">
-				                            <span class="description-heading">Lorem Ipsum</span>
-				                            <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-				                        </span>
-				                    </a>
-				                </div>
-				                <div class="col-md-6 col-lg-4 item zoom-on-hover">
-				                    <a class="lightbox" href="img/image8.jpg">
-				                        <img class="img-fluid image" src="img/image8.jpg">
-				                        <span class="description">
-				                            <span class="description-heading">Lorem Ipsum</span>
-				                            <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-				                        </span>
-				                    </a>
-				                </div>
-				                <div class="col-md-6 col-lg-4 item zoom-on-hover">
-				                    <a class="lightbox" href="img/image9.jpg">
-				                        <img class="img-fluid image" src="img/image9.jpg">
-				                        <span class="description">
-				                            <span class="description-heading">Lorem Ipsum</span>
-				                            <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-				                        </span>
-				                    </a>
-		                		</div>
-		            		</div>
-		        		</div>
-		    		</section>
+			<section class="gallery-block compact-gallery">
+		        <div class="container">
+		        	<!-- section header -->
+		            <h1 class="header">Галерея</h1>
+		            <hr class="headerLine">
+		            <div class="row no-gutters">
+		                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+		                    <a class="lightbox" href="img/image1.jpg">
+			                    <img class="img-fluid image" src="img/image1.jpg">
+		                   	</a>
+		                </div>
+		                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+		                    <a class="lightbox" href="img/image2.jpg">
+				                <img class="img-fluid image" src="img/image2.jpg">
+				            </a>
+		                </div>
+		           		<div class="col-md-6 col-lg-4 item zoom-on-hover">
+				            <a class="lightbox" href="img/image3.jpg">
+				                <img class="img-fluid image" src="img/image3.jpg">
+				            </a>
+		           		</div>
+		                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+				            <a class="lightbox" href="img/image4.jpg">
+				                <img class="img-fluid image" src="img/image4.jpg">
+				            </a>
+		                </div>
+		           		<div class="col-md-6 col-lg-4 item zoom-on-hover">
+				            <a class="lightbox" href="img/image5.jpg">
+				                <img class="img-fluid image" src="img/image5.jpg">
+				            </a>
+		           		</div>
+		           		<div class="col-md-6 col-lg-4 item zoom-on-hover">
+				            <a class="lightbox" href="img/image6.jpg">
+				                <img class="img-fluid image" src="img/image6.jpg">
+				            </a>
+		            	</div>
+		            </div>
+		        </div>
+		    </section>
 
-		    		<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-		    		<script>
-		        		baguetteBox.run('.compact-gallery', { animation: 'slideIn'});
-		    		</script>
+		    <!-- Gallery script -->
+		    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+		    <script>
+		   		baguetteBox.run('.compact-gallery', { animation: 'slideIn'});
+		    </script>
 		</div>
 
 	</div>
+	
+	<!-- form and map -->
+	<div class="formContainer" id="formContainer">
 
+		<div class="container">
+			<div class="row">
+				<!-- form div -->
+				<div class="form col-lg-7">
+					<!-- form -->
+					<form action="/index.html" method="POST">
+		  				<div class="form-row">
+		    				<div class="form-group col-md-6">
+		      					<label for="name">Имя</label>
+		      					<input type="text" class="form-control" id="name" name="name" placeholder="Имя" required>
+		    				</div>
+
+						    <div class="form-group col-md-6">
+						      	<label for="phone">Телефон</label>
+						      	<input type="tel" class="form-control" id="phone" name="phone" placeholder="+7 707 987 65 42" required pattern="[0-9]+" title="please enter number only">
+						    </div>
+		  				</div>
+
+		  				<div class="form-group">
+		  					<label for="message">Комментарий</label>
+		  					<textarea class="form-control" id="message" name="message" rows="3"></textarea>
+		  				</div>
+
+		  				<!-- send -->
+		  				<div style="text-align: center; padding: 20px 0;">
+		 	 				<button type="submit" name="submit" class="btn btn-primary">Отправить</button>
+		  				</div>
+					</form>
+				</div>
+
+				<div class="col-lg-5">
+					<!-- map -->
+					<div class="mapBox">
+						<a href="https://yandex.ru/maps/?um=constructor%3A32abf4ca9e61a788519efdefabe8307ab397b9d73e507e16be76b4f6c87e7b89&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A32abf4ca9e61a788519efdefabe8307ab397b9d73e507e16be76b4f6c87e7b89&amp;width=500&amp;height=300&amp;lang=ru_RU" alt="" style="border: 0; width: 100%; height: 100%" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- / form and map -->
+
+	<!-- Footer -->
+	<footer class="page-footer font-small">
+	  	<div class="container text-center text-md-left">
+	    	
+	    	<!-- Grid row -->
+	    	<div class="row">
+	      		<div class="col-md-6">
+	        		<h5>ITschool</h5>
+	        		<p>Школа программирования</p>
+	      		</div>
+
+	      		<div class="col-md-3">
+			        <!-- Links -->
+			        <h5 class="text-uppercase">Курсы</h5>
+			        <ul class="list-unstyled">
+			          	<li><a href="#courses">C++</a></li>
+			          	<li><a href="#courses">WEB</a></li>
+			          	<li><a href="#courses">Python</a></li>
+			          	<li><a href="#courses">Java</a></li>
+			        </ul>
+	     		</div>
+
+		      	<div class="col-md-3">
+		        	<h5 class="text-uppercase">Контакты</h5>
+		        	<ul class="list-unstyled">
+		          		<li>+7 777 676 42 23</li>
+		          		<li>ITSchool@gmail.com</li>
+		          		<li>г.Алматы, ул Манаса</li>
+		        	</ul>
+		      	</div>
+	    	</div>
+	    	<!-- Grid row -->
+
+	  </div>
+	  <!-- Footer Links -->
+
+	  <!-- Copyright -->
+	  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+	    <a href="https://mdbootstrap.com/"> ITSchool.kz</a>
+	  </div>
+	  <!-- Copyright -->
+
+	</footer>
+
+	<!-- Bootstrap 4 JS cdn -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
